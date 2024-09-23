@@ -1,0 +1,85 @@
+/* custom scrollbar  */
+::-webkit-scrollbar{
+    width: 3px; 
+    height: 3px;
+    box-sizing: 3px;
+}
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #027bd2;
+}
+
+:root {
+    --primary-color: #f1f5f9;
+    --panel-color: #fff;
+    --text-color: #000;
+    --black-light-color: #707070;
+    --border-color: #e2e8f0;
+    --toggle-color: #ddd;
+    --box1-color: #dbeafe;
+    --box2-color: #f3e8ff;
+    --box3-color: #d2f4ee;
+    --box4-color: #fee2e2;
+    --number-color: #1e293b;
+    --box-text-color: #64748b;
+    --title-icon-color: #fff;
+    --hover-bg-color: #eff6ff;
+    --hover-text-bg-color: #3b82f6;
+    --primary-btn-color: #2563eb;
+    --danger-color: #f43f5e;
+    --success-color: #22c55e;
+    --secondary-color: #d4d4d4;
+    --warning-color: #fbbf24;
+    --btn-color: #fafafa;
+
+
+    /*============= Transition============*/
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+    --tran-03: all 0.2s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    } 
+}
+
+@keyframes bounce {
+    10% {
+        -webkit-transform: rotate(15deg);
+    } 
+    20% {
+        -webkit-transform: rotate(-15deg);
+    }  
+    30% {
+        -webkit-transform: rotate(15deg);
+    }
+    50% {
+        -webkit-transform: rotate(-15deg);
+    }
+}
+
+.active {
+    background-color: var( --hover-bg-color);
+    color: var(--hover-text-bg-color);
+}

@@ -1,0 +1,44 @@
+.base-button{
+  min-width: 110px ;
+  height: 38px;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.4rem;
+  padding: 0 12px;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  line-height: 1.6rem;
+}
+
+.primary {
+  background-color: var(--primary-btn-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color: #333;
+}
+
+.danger {
+  background-color: var(--danger-color);
+}
+
+.success {
+  background-color: var(--success-color);
+}
+
+.warning {
+  background-color: var(--warning-color);
+}
+
+.primary,
+.danger,
+.success,
+.warning {
+  color: var(--btn-color);
+}
